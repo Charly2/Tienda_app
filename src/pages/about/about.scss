@@ -1,0 +1,33 @@
+page-about {
+  .main{
+    h4{
+      color: #607D8B;
+      text-align: center;
+      font-size: 1.3em;
+      margin-bottom: 0;
+    }
+    h3{
+      display: block;
+      width: 100%;
+      color : color($colors,primary,base);
+      font-size: 1.5em;
+      margin-top: .5em;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    p{
+      color: #607D8B;
+      font-size: 1em;
+      text-align: center;
+      line-height: 1.5em;
+    }
+    img {
+      width: 60%;
+      display: block;
+      margin: 3em auto .2em auto;
+      border-radius: 50%;
+      border: 2px solid #607D8B;
+
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{nombre}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item class="productos" *ngFor="let item of producto">
+    <ion-card>
+      <img src="http://192.168.0.16:3000/images/productos/{{item.idproducto}}.jpg" alt="">
+      <ion-card-content>
+        <ion-card-title>
+          {{item.nombre}}
+        </ion-card-title>
+        <p>Descripcion: {{item.descripbreve}}</p>
+        <p>Marca: {{item.marca}}</p>
+        <p>Vendedor: {{item.vendedor}}</p>
+        <p>Precio: {{item.precio}}</p>
+      </ion-card-content>
+      <ion-row>
+        <ion-col>
+          <button ion-button clear small color="primary">Editar</button>
+        </ion-col>
+        <ion-col text-right="">
+          <button ion-button clear small color="rojo" icon-left >Editar</button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-item>
+</ion-content>

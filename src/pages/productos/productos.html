@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Productos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="main">
+  <h2 class="titulo">Productos</h2>
+  <ion-list>
+    <ion-item class="productos" *ngFor="let item of lista">
+      <ion-thumbnail item-left>
+        <img src="http://192.168.0.16:3000/images/productos/{{item.idproducto}}.jpg" alt="">
+      </ion-thumbnail>
+      <h2>{{item.nombre}}</h2>
+      <p>Precio: {{item.precio}}</p>
+      <button ion-button clear item-right (click)="onClick(item.idproducto,item.nombre)">Ver</button>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>
+

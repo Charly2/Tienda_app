@@ -1,0 +1,44 @@
+page-home{
+  .main{
+    background: #ffffff;
+    h2{
+      color: #607D8B;
+      text-align: center;
+      font-size: 1.4em;
+    }
+    span{
+      display: block;
+      width: 100%;
+      color : color($colors,primary,base);
+      font-size: 2em;
+      text-align: center;
+    }
+    p{
+      color: #607D8B;
+      font-size: 1em;
+      text-align: center;
+      line-height: 1.5em;
+    }
+    img{
+
+      width: 80%;
+      display: block;
+      margin: 3em auto .2em auto;
+
+    }
+  }
+}
+
+#custom-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100000;
+  width:100%;
+  background-image: url(/assets/img/fondoSplash.jpg);
+  background-size:cover;
+}
+
+
